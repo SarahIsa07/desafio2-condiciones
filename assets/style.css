@@ -1,0 +1,19 @@
+.foto {
+    width: 300px;
+}
+
+.container { 
+    display: flex;
+    justify-content: space-between;
+}
+
+.container-select{
+    display: flex;
+    justify-content: center;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

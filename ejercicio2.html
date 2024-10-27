@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./assets/style.css" rel="stylesheet">
+    <title>Ejercicio2</title>
+</head>
+
+<body>
+    <section class="container">
+        <div>
+            <img class="foto" src="./assets/img/sticker1.png" alt="foto1">
+            <input id="sticker-dog" type="text">
+        </div>
+        <div>
+            <img class="foto" src="./assets/img/sticker2.png" alt="foto2">
+            <input id="sticker-cat" type="text">
+        </div>
+        <div>
+            <img class="foto" src="./assets/img/sticker3.png" alt="foto3">
+            <input id="sticker-bunny" type="text">
+        </div>
+    
+    </section>
+    
+    <p id="resultado-stickers"></p>
+
+    <button onclick="
+    stickerDog = Number(document.querySelector('#sticker-dog').value);
+    stickerCat = Number(document.querySelector('#sticker-cat').value);
+    stickerBunny = Number(document.querySelector('#sticker-bunny').value);
+
+    cantidadStickers = stickerDog + stickerCat + stickerBunny
+
+    totalStickers = document.querySelector('#resultado-stickers');
+
+    if(cantidadStickers <= 10){
+        totalStickers.innerText = `Estas llevando ${cantidadStickers} stickers`
+      } else {
+        totalStickers.innerText = 'Estas llevando demasiados stickers'
+      }
+    ">Verificar</button>
+
+
+</body>
+
+</html>
